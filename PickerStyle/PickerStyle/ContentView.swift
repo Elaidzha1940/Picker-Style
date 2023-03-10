@@ -9,34 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var selection: String = "1"
+    //@State var selection: String = "1"
 
     var body: some View {
        
         VStack {
             
-            Picker(
-                selection: $selection,
-                label: Text(""),
-                
-                content: {
-                    
-                    ForEach(1..<24) { number in
-                        
-                        Text("\(number)")
-                            
-                    }
-                })
-            .pickerStyle(.inline)
-            .frame(width: UIScreen.main.bounds.width / 2.5)
-            .foregroundColor(.black)
+//            Picker(
+//                selection: $selection,
+//                label: Text(""),
+//
+//                content: {
+//
+//                    ForEach(1..<24) { number in
+//
+//                        Text("\(number)")
+//
+//                    }
+//                })
+//
+//            .pickerStyle(.inline)
+//            .frame(width: UIScreen.main.bounds.width / 2.5)
+//            .foregroundColor(.black)
             
             
             
-            //            VStack {
-            //                   DatePicker("", selection: $currentTime, displayedComponents: .hourAndMinute)
-            //                    .labelsHidden()
-            //               }
+            VStack {
+                DatePicker("", selection: $currentTime, displayedComponents: .hourAndMinute)
+                    .labelsHidden()
+            }
             
             
             
