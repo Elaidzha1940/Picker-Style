@@ -15,7 +15,36 @@ struct PickerStyle1: View {
     var totalWidth = UIScreen.main.bounds.width - 80
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            ZStack {
+                
+                Picker("", selection: $selection) {
+                    ForEach(options, id: \.self) {
+                        Text("\($0)")
+                    }
+                }
+                .pickerStyle(.inline)
+                .frame(width: UIScreen.main.bounds.width / 2.5)
+                .foregroundColor(.brown)
+                
+            }
+            Button {
+                print()
+            } label: {
+                Text("Готово")
+                    .frame(width: 160, height: 50)
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(13)
+                
+            }
+            .frame(height: 50)
+            .padding()
+        }
+        .background(Color.white)
+        .frame(width: 178, height: 261)
+        .cornerRadius(13)
     }
 }
 
