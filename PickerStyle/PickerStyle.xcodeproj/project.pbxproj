@@ -11,6 +11,7 @@
 		E4ACA45C29BB5FBB00B481D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ACA45B29BB5FBB00B481D5 /* ContentView.swift */; };
 		E4ACA45E29BB5FBC00B481D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4ACA45D29BB5FBC00B481D5 /* Assets.xcassets */; };
 		E4ACA46229BB5FBC00B481D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4ACA46129BB5FBC00B481D5 /* Preview Assets.xcassets */; };
+		E4ACA46929BB6AAE00B481D5 /* PickerStyle1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ACA46829BB6AAE00B481D5 /* PickerStyle1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		E4ACA45D29BB5FBC00B481D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4ACA45F29BB5FBC00B481D5 /* PickerStyle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PickerStyle.entitlements; sourceTree = "<group>"; };
 		E4ACA46129BB5FBC00B481D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4ACA46829BB6AAE00B481D5 /* PickerStyle1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerStyle1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				E4ACA45929BB5FBB00B481D5 /* PickerStyleApp.swift */,
 				E4ACA45B29BB5FBB00B481D5 /* ContentView.swift */,
+				E4ACA46829BB6AAE00B481D5 /* PickerStyle1.swift */,
 				E4ACA45D29BB5FBC00B481D5 /* Assets.xcassets */,
 				E4ACA45F29BB5FBC00B481D5 /* PickerStyle.entitlements */,
 				E4ACA46029BB5FBC00B481D5 /* Preview Content */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4ACA46929BB6AAE00B481D5 /* PickerStyle1.swift in Sources */,
 				E4ACA45C29BB5FBB00B481D5 /* ContentView.swift in Sources */,
 				E4ACA45A29BB5FBB00B481D5 /* PickerStyleApp.swift in Sources */,
 			);
