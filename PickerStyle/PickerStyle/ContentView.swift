@@ -24,13 +24,36 @@ struct ContentView: View {
                     ForEach(1..<24) { number in
                         
                         Text("\(number)")
-                            .foregroundColor(.white)
+                            
                     }
                 })
-            
             .pickerStyle(.inline)
             .frame(width: UIScreen.main.bounds.width / 2.5)
             .foregroundColor(.black)
+            
+            
+            
+            //            VStack {
+            //                   DatePicker("", selection: $currentTime, displayedComponents: .hourAndMinute)
+            //                    .labelsHidden()
+            //               }
+            
+            
+            
+            Button {
+                print()
+            } label: {
+                Text("Готово")
+                    .frame(width: 160, height: 50)
+                    .background(Color.black)
+                    .foregroundColor(.white)
+                    .cornerRadius(13)
+                
+            }
+            .frame(height: 50)
+            .padding()
+            
+            
         }
     }
 }
@@ -40,3 +63,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
