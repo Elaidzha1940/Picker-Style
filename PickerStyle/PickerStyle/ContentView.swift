@@ -12,13 +12,26 @@ struct ContentView: View {
     @State var selection: String = "1"
 
     var body: some View {
+       
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            Picker(
+                selection: $selection,
+                label: Text(""),
+                
+                content: {
+                    
+                    ForEach(1..<24) { number in
+                        
+                        Text("\(number)")
+                            .foregroundColor(.white)
+                    }
+                })
+            
+            .pickerStyle(.inline)
+            .frame(width: UIScreen.main.bounds.width / 2.5)
+            .foregroundColor(.black)
         }
-        .padding()
     }
 }
 
